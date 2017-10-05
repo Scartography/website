@@ -1,25 +1,47 @@
-<!DOCTYPE html>
-
-<html>
-
-  <head>
-
-    <script src="http://www.webglearth.com/v2/api.js"></script>
-
-    <script>
-
-      function initialize() {
-
-        var earth = new WE.map('earth_div');
-
-        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-
-          attribution: '© OpenStreetMap contributors'
-
-        }).addTo(earth);
-		polygonAlgiers = WE.polygon([[36.86581340525492, 2.831710675043643], [36.86561833148288, 3.2733009869243035], [36.36871654333729, 3.2715528012365396], [36.36890813641976, 2.8327871575569676], [36.86581340525492, 2.831710675043643]]);
-		polygonAlgiers.addTo(earth);
-				polygonAmman = WE.polygon([[32.147811767168264, 35.740268853686665], [32.13809340250476, 36.15706764767562], [31.64155570546274, 36.1401547616527], [31.6510890807409, 35.72558154558625], [32.147811767168264, 35.740268853686665]]);
+<!DOCTYPE html>
+
+
+
+<html>
+
+
+
+  <head>
+
+
+
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+
+
+
+    <script>
+
+
+
+      function initialize() {
+
+
+
+        var earth = new WE.map('earth_div');
+
+
+
+        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+
+
+
+          attribution: '© OpenStreetMap contributors'
+
+
+
+        }).addTo(earth);
+
+		polygonAlgiers = WE.polygon([[36.86581340525492, 2.831710675043643], [36.86561833148288, 3.2733009869243035], [36.36871654333729, 3.2715528012365396], [36.36890813641976, 2.8327871575569676], [36.86581340525492, 2.831710675043643]]);
+
+		polygonAlgiers.addTo(earth);
+
+				polygonAmman = WE.polygon([[32.147811767168264, 35.740268853686665], [32.13809340250476, 36.15706764767562], [31.64155570546274, 36.1401547616527], [31.6510890807409, 35.72558154558625], [32.147811767168264, 35.740268853686665]]);
+
 		polygonAmman.addTo(earth);
 		polygonAlgiers = WE.polygon([[36.86581340525492, 2.831710675043643], [36.86561833148288, 3.2733009869243035], [36.36871654333729, 3.2715528012365396], [36.36890813641976, 2.8327871575569676], [36.86581340525492, 2.831710675043643]]);
 		polygonAlgiers.addTo(earth);
@@ -336,33 +358,62 @@
 		polygonZakopane = WE.polygon([[49.37646013492749, 19.798989722335318], [49.37895861384944, 20.070062577856476], [49.13108295758309, 20.074707902249695], [49.1286060986165, 19.80498844076275], [49.37646013492749, 19.798989722335318]]);
 		polygonZakopane.addTo(earth);
 		polygonZakopane = WE.polygon([[49.37646013492749, 19.798989722335318], [49.37895861384944, 20.070062577856476], [49.13108295758309, 20.074707902249695], [49.1286060986165, 19.80498844076275], [49.37646013492749, 19.798989722335318]]);
-		polygonZakopane.addTo(earth);
-	
-
-        //earth.setView([48, 6], 5);
-
-      }
-
-    </script>
-
-    <style>
-
-      html, body{padding: 0; margin: 0;}
-
-      #earth_div{top: 0; right: 0; bottom: 0; left: 0; 
-
-                 background-color: #000; position: absolute !important;}
-
-      </style>
-
-      <title>S.cartography Atlas Overview</title>
-
-    </head>
-
-    <body onload="initialize()">
-
-      <div id="earth_div"></div>
-
-  </body>
-
+		polygonZakopane.addTo(earth);
+
+	
+
+
+
+        //earth.setView([48, 6], 5);
+
+
+
+      }
+
+
+
+    </script>
+
+
+
+    <style>
+
+
+
+      html, body{padding: 0; margin: 0;}
+
+
+
+      #earth_div{top: 0; right: 0; bottom: 0; left: 0; 
+
+
+
+                 background-color: #000; position: absolute !important;}
+
+
+
+      </style>
+
+
+
+      <title>S.cartography Atlas Overview</title>
+
+
+
+    </head>
+
+
+
+    <body onload="initialize()">
+
+
+
+      <div id="earth_div"></div>
+
+
+
+  </body>
+
+
+
 </html>
