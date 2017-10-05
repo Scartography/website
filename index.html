@@ -1,52 +1,35 @@
 <!DOCTYPE html>
-
 <html>
-
   <head>
-
     <script src="http://www.webglearth.com/v2/api.js"></script>
-
     <script>
-
       function initialize() {
 
         var earth = new WE.map('earth_div');
 
         WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-
           attribution: '© OpenStreetMap contributors'
-
         }).addTo(earth);
+
 		polygonAlgiers = WE.polygon([[36.86581340525492, 2.831710675043643], [36.86561833148288, 3.2733009869243035], [36.36871654333729, 3.2715528012365396], [36.36890813641976, 2.8327871575569676], [36.86581340525492, 2.831710675043643]]);
 		polygonAlgiers.addTo(earth);
 				polygonAmman = WE.polygon([[32.147811767168264, 35.740268853686665], [32.13809340250476, 36.15706764767562], [31.64155570546274, 36.1401547616527], [31.6510890807409, 35.72558154558625], [32.147811767168264, 35.740268853686665]]);
 		polygonAmman.addTo(earth);
 	
-
-        //earth.setView([48, 6], 5);
-
+      //earth.setView([48, 6], 5);
       }
 
     </script>
-
     <style>
-
       html, body{padding: 0; margin: 0;}
 
       #earth_div{top: 0; right: 0; bottom: 0; left: 0; 
 
                  background-color: #000; position: absolute !important;}
-
       </style>
-
       <title>S.cartography Atlas Overview</title>
-
     </head>
-
     <body onload="initialize()">
-
       <div id="earth_div"></div>
-
   </body>
-
 </html>
